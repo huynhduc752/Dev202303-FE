@@ -38,6 +38,7 @@
 .list-product{
     width: 60%;
     margin: auto;
+    flex-wrap: wrap;
 }
 .header-product{
     justify-content: space-around;
