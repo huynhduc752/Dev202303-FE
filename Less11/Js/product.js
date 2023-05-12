@@ -165,6 +165,7 @@ function setView(arrProduct){
     }
 }
 
+
 function renderHTML(obj){
     let view2 = `<div class="product-item position-rel w-25">
                         <div class="top-product position-rel mb-2r">
@@ -199,3 +200,24 @@ function renderHTML(obj){
 // b1: click vào "tìm kiếm" => lấy value trong ô input search 
 // b2: so sánh giá trị trong ô input search với tất cả các thuộc tính "name" trong array danh sách sp
 // b3: nếu có thuộc tính name thỏa mãn thì in ra màn hình phân tử có thuộc tính name đó
+
+setView(listProduct2)
+
+
+function search(){
+    var text = $("#search").val();
+    var str = text.trim().toLowerCase();
+    $('.list-product').html('');
+    for(var i = 0; i < listProduct2.length ; i++){
+        // if(listProduct2[i].name == text){
+        //     renderHTML(listProduct2[i]);
+        // }
+        if(listProduct2[i].name.trim().toLowerCase().includes(str)){
+            renderHTML(listProduct2[i]);
+        }
+
+    }
+}
+// $('.btn-search').click(function(){
+//     search();
+// })
