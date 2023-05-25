@@ -1,0 +1,31 @@
+.body-news .title-news-page{
+    margin-top: 5.5rem;
+    margin-bottom: 3rem;
+}
+.body-news .list-news{
+    width: 60%;
+    margin: auto;
+}
+
+.body-news .item-news{
+    margin-bottom: 2rem;
+}
+
+.body-news{
+    background-image: url("../Images/news/bg-news.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+/* css mobile */
+@media only screen and (max-width: 900px) {
+    .body-news .list-news{
+        width: 100%;
+        padding: 1rem;
+    }
+  }

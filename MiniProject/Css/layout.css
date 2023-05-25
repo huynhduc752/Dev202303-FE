@@ -1,0 +1,75 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+html{
+    font-size: 20px; /* => 1 rem mặc định = 20px */
+}
+
+.header .navbar{
+    width: 60%;
+    margin: auto;
+    padding: 0.75rem 0;
+}
+.header .navbar a.nav-link{
+    font-size: 0.9rem;
+    color: #000;
+    padding: 0.5rem 1.5rem !important;
+}
+.header .navbar .nav-item:last-child a.nav-link{
+    padding-right: 0 !important;
+}
+
+.font-48{
+    font-size: 2.4rem;
+}
+.color-black{
+    color: #000;
+}
+.w-30{
+    width: 30%;
+}
+.font-24{
+    font-size: 1.2rem;
+}
+.font-14{
+    font-size: 0.7rem;
+}
+.active{
+    background-color: aquamarine;
+}
+.header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+/* css mobile (reponsive) */
+@media only screen and (max-width: 900px) {
+    html{
+        font-size: 16px; /* => 1 rem mặc định = 16px */
+    }
+    .header .navbar {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .header .navbar-toggler{
+        border: none;
+    }
+    .w-mobile-45{
+        width: 48% ;
+    }
+    .font-24{
+        font-size: 1rem;
+    }
+    .font-14{
+        font-size: 0.6rem;
+    }
+    .navbar-brand img{
+        width: 7rem;
+    }
+  }
